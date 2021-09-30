@@ -79,11 +79,11 @@ test('integer', (expect) => {
 });
 
 test('pythagorean', (expect) => {
-    const input1 = 5;
-    const input2 = 3;
-    const expected = 1;
+    const input1 = 3;
+    const input2 = 4;
+    const expected = 5;
 
     const actual = pythagorean(input1, input2);
 
-    expect.equal(actual, expected, 'should calculate hypotanouse');
+    expect.equal(actual, expected, 'should calculate hypotanouse with side of 3 and 4');
 });
