@@ -1,5 +1,5 @@
 // IMPORT MODULES under test here:
-import { add_two, add } from '../calculations.js';
+import { add_two, add, subtract, multiply, divide, modulo, integer, pythagorean } from '../calculations.js';
 
 // import { example } from '../example.js';
 
@@ -21,15 +21,15 @@ test('time to test a function', (expect) => {
 });
 
 
-test('add(4,5) function', (expect) => {
+test('divide', (expect) => {
     // Arrange
-    const input1 = 4;
+    const input1 = 25;
     const input2 = 5;
-    const expected = 9;
+    const expected = 5;
 
     // Act
-    const actual = add(input1, input2);
+    const actual = divide(input1, input2);
 
     // Assert
-    expect.equal(actual, expected, 'should add 3 and 2');
+    expect.equal(actual, expected, 'should divide 25 and 5');
 });
