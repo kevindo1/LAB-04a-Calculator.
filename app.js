@@ -1,3 +1,5 @@
+import { add } from './calculations.js';
+
 // import functions and grab DOM elements
 const addInput1 = document.getElementById('add-input-1');
 const addInput2 = document.getElementById('add-input-2');
@@ -12,5 +14,9 @@ const addAnswer = document.getElementById('add-answer');
   // update DOM to reflect the new state
 
 addOutput.addEventListener('click', () => {
-    console.log('clicked');
+    const value1 = Number(addInput1.value);
+    const value2 = Number(addInput2.value);
+    const result = add(value1, value2);
+    addAnswer.textContent = result;
 });
+
