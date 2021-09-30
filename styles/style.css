@@ -10,3 +10,8 @@ main {
     background-color: aquamarine;
     justify-content: center;
 }
+
+div button:hover {
+    background: blue;
+    color: white;
+}
