@@ -15,3 +15,11 @@ div button:hover {
     background: blue;
     color: white;
 }
+
+input {
+    border-radius: 10px;
+}
+
+button {
+    border-radius: 50px;
+}
